@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { projects } from "../../constants";
 
 const Work = () => {
@@ -15,7 +15,7 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[10vw] font-sans relative"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -28,7 +28,7 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -39,7 +39,7 @@ const Work = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-xl"
+                className="w-full h-58 object-cover rounded-xl"
               />
             </div>
             <div className="p-6">
@@ -67,8 +67,12 @@ const Work = () => {
       {/* Modal Container */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
-            <div className="flex justify-end p-4">
+          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl max-h-[90vh] overflow-y-auto overflow-hidden relative scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-black
+    [&::-webkit-scrollbar]:w-2
+    [&::-webkit-scrollbar-track]:bg-black
+    [&::-webkit-scrollbar-thumb]:bg-purple-600
+    [&::-webkit-scrollbar-thumb]:rounded-full ">
+            <div className="sticky top-0 right-0 flex justify-end p-4 bg-gray-900 z-10">
               <button
                 onClick={handleCloseModal}
                 className="text-white text-3xl font-bold hover:text-purple-500"
