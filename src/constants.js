@@ -110,9 +110,9 @@ export const SkillsInfo = [
       id: 0,
       img: rccalogo,
       school: "Rosary College of Commerce & Arts, Navelim, Goa",
-      date: "July 2023 - Present",
-      grade: "9.35 CGPA",
-      desc: "I am pursuing my Bachelor's degree (BCA) in Computer Applications from Rosary College of Commerce & Arts, Navelim, Goa. During my time at Rosary College, I gained a strong foundation in programming, software development, and computer applications principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, Agile Methodologies, Full Stack Development, UI/UX development, Cloud Computing and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at Rosary College has been instrumental in shaping my technical abilities and professional growth.",
+      date: "July 2023 - May 2026",
+      grade: "9.42 FGPA",
+      desc: "I have completed my Bachelor's degree (BCA) in Computer Applications from Rosary College of Commerce & Arts, Navelim, Goa. During my time at Rosary College, I gained a strong foundation in programming, software development, and computer applications principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, Agile Methodologies, Full Stack Development, UI/UX development, Cloud Computing and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at Rosary College has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Bachelor of Computer Applications BCA",
     },
     {
